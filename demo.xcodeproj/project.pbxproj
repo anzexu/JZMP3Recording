@@ -22,7 +22,7 @@
 		CE9D03301919CBD100342D04 /* JZMp3EncodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D032B1919CBD100342D04 /* JZMp3EncodeOperation.m */; };
 		CE9D03311919CBD100342D04 /* JZMp3RecordingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D032D1919CBD100342D04 /* JZMp3RecordingClient.m */; };
 		CE9D03321919CBD100342D04 /* JZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D032F1919CBD100342D04 /* JZRecorder.m */; };
-		CE9D033F1919D8D200342D04 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D033E1919D8D200342D04 /* libmp3lame.a */; };
+		D55061B01919F3C4005FBD24 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D55061AF1919F3C4005FBD24 /* libmp3lame.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,8 @@
 		CE9D032D1919CBD100342D04 /* JZMp3RecordingClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMp3RecordingClient.m; sourceTree = "<group>"; };
 		CE9D032E1919CBD100342D04 /* JZRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZRecorder.h; sourceTree = "<group>"; };
 		CE9D032F1919CBD100342D04 /* JZRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZRecorder.m; sourceTree = "<group>"; };
-		CE9D033E1919D8D200342D04 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp3lame.a; path = lame/lib/libmp3lame.a; sourceTree = "<group>"; };
+		D55061AF1919F3C4005FBD24 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		D55061B11919F3D5005FBD24 /* lame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9D02F71919CB5400342D04 /* CoreGraphics.framework in Frameworks */,
-				CE9D033F1919D8D200342D04 /* libmp3lame.a in Frameworks */,
+				D55061B01919F3C4005FBD24 /* libmp3lame.a in Frameworks */,
 				CE9D02F91919CB5400342D04 /* UIKit.framework in Frameworks */,
 				CE9D02F51919CB5400342D04 /* Foundation.framework in Frameworks */,
 			);
@@ -108,7 +109,7 @@
 		CE9D02F31919CB5400342D04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D033E1919D8D200342D04 /* libmp3lame.a */,
+				D55061AF1919F3C4005FBD24 /* libmp3lame.a */,
 				CE9D02F41919CB5400342D04 /* Foundation.framework */,
 				CE9D02F61919CB5400342D04 /* CoreGraphics.framework */,
 				CE9D02F81919CB5400342D04 /* UIKit.framework */,
@@ -134,6 +135,7 @@
 		CE9D02FB1919CB5400342D04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D55061B11919F3D5005FBD24 /* lame.h */,
 				CE9D02FC1919CB5400342D04 /* demo-Info.plist */,
 				CE9D02FD1919CB5400342D04 /* InfoPlist.strings */,
 				CE9D03001919CB5400342D04 /* main.m */,
@@ -379,6 +381,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lame/lib/**",
 					"$(PROJECT_DIR)/lame/lib",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "lame/**";
@@ -398,6 +401,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lame/lib/**",
 					"$(PROJECT_DIR)/lame/lib",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "lame/**";
